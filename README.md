@@ -6,7 +6,7 @@ Here is a web application to handle [this](http://imgs.xkcd.com/comics/np_comple
 Directions for running:<br>
 1. Clone repository to local machine<br>
 2. Navigate to the repository<br>
-3. Run "gem install"<br>
+3. Run "bundle install"<br>
 4. Create DB (run "rake db:create")<br>
 5. Migrate (run "rake db:migrate")<br>
 6. Start server (run "rackup")<br>
