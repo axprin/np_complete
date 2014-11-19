@@ -2,7 +2,6 @@ require 'rubygems'
 require 'sinatra'
 require 'bigdecimal'
 
-
 get '/' do
   Item.destroy_all
   Total.destroy_all
@@ -10,6 +9,10 @@ get '/' do
     File.delete("./public/uploaded.txt")
   end
   erb :index
+end
+
+get '/sample' do
+  erb :sample
 end
 
 post '/upload' do
@@ -38,7 +41,6 @@ get '/solution' do
   solve(@items, @total)
   erb :solution
 end
-
 
 def solve(items, total)
   @solution = []

@@ -2,20 +2,20 @@
   <h2>This is the contents of your upload:</h2>
   <h4>Total: $<%= '%.2f' % @total.amount %></h4>
   <h4>Menu Items:</h4>
-		<table border="1">
-  		<tr>
-				<td width="150px">Name</td>
-  			<td width="75px">Cost</td>
-  		</tr>
-  		<% @items.each do |item| %>
-  			<tr>
-  				<td><%= item.name %></td>
-  				<td>$<%= '%.2f' % item.cost %></td>
-  			</tr>
-  		<% end %>
-  	</table><br>
-  	<p>If this looks correct, please proceed by clicking "Calculate!"<br>If things don't look right, please click "This is incorrect" and make sure the data file you imported is in the correct format.</p>
+    <table border="1">
+      <tr>
+        <td width="150px">Name</td>
+        <td width="75px">Cost</td>
+      </tr>
+      <% @items.each do |item| %>
+        <tr>
+          <td><%= item.name %></td>
+          <td>$<%= '%.2f' % item.cost %></td>
+        </tr>
+      <% end %>
+    </table><br>
+    <p>If this looks correct, please proceed by clicking "Calculate!"</p>
+    <p>If things don't look right, please click "This is incorrect" and make sure the data file you imported is in the correct format.</p>
 <a href="/solution"><button>Calculate!</button></a><br><br>
 <a href="/"><button>This is incorrect</button></a>
 </div>
-
