@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Table XI Code Challenge</h2>
+  <p>Here is a web application to handle <a href="http://imgs.xkcd.com/comics/np_complete.png" target="_blank">this</a> xkcd cartoon. In other words, this application will take in a data file with a total followed by a list of menu items/prices (format is noted below), and return all possible combinations of the menu items that sum up to the exact total. Enjoy!</p><br>
+	<p>Files must be in the following format:</p>
+	-------------------------------<br>	
+	$15.05<br>
+	mixed fruit,$2.15<br>
+	french fries,$2.75<br>
+	side salad,$3.35<br>
+	hot wings,$3.55<br>
+	mozzarella sticks,$4.20<br>
+	sampler plate,$5.80<br>
+	-------------------------------<br><br>
+  <form action="/upload" enctype="multipart/form-data" method="post">
+		<p>Please select a data file to upload:<br>
+		<input type="file" accept=".txt" name="file"></p>
+		<input type="submit" value="Upload">
+	</form>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+	<% if @solution.length > 1 %>
+  	<h2>Number of solutions: <%= @solution.length %> </h2>
+  	<% @solution.each do |solution| %><br>
+  		<table border="1">
+  			<tr>
+  				<td width="150px">Name</td>
+  				<td width="75px">Cost</td>
+  			</tr>
+  		<% solution.each do |item| %>
+  			<tr>
+  				<td><%= item.name %></td>
+  				<td>$<%= '%.2f' % item.cost %></td>
+  			</tr>
+  		<% end %>
+  			<tr>
+  				<td><strong>Total:</strong></td>
+  				<td><strong>$<%= '%.2f' % @total.amount %></strong></td>
+  			</tr>
+  		</table>
+  	<% end %><br>
+  <% elsif @solution.length == 0 %>
+  <h2>There are no solutions</h2>
+  <% end %>
+  <a href="/"><button>Start Over</button></a>
+</div>
+
