@@ -1,4 +1,4 @@
-Table XI challenge
+np_complete
 =====================
 
 Here is a web application to handle [this](http://imgs.xkcd.com/comics/np_complete.png) xkcd cartoon. In other words, this application will take in a data file with a total followed by a list of menu items/prices, and return all possible combinations of the menu items that sum up to the exact total. Enjoy!
