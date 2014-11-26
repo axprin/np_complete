@@ -10,4 +10,6 @@ Directions for running:<br>
 4. Create DB (run "rake db:create")<br>
 5. Migrate (run "rake db:migrate")<br>
 6. Start server (run "rackup")<br>
-7. In browser, navigate to "localhost:9292"
+7. In browser, navigate to "localhost:9292"<br><br>
+
+I have also deployed the app to [Heroku](https://np-complete1.herokuapp.com/)
